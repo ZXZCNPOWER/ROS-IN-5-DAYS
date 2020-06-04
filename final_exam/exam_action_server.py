@@ -25,11 +25,6 @@ class EXAMActionMsgClass(object):
     success = True
     r = rospy.Rate(1)
     
-    # define the different publishers and messages that will be used
-    self._pub_takeoff = rospy.Publisher('/drone/takeoff', Empty, queue_size=1)
-    self._takeoff_msg = Empty()
-    self._pub_land = rospy.Publisher('/drone/land', Empty, queue_size=1)
-    self._land_msg = Empty()
     
     i = 0
     for i in xrange(0, 4):
