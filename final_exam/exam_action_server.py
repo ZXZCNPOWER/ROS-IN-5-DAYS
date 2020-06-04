@@ -46,7 +46,7 @@ class EXAMActionMsgClass(object):
     # If success, then we publish the final result
     # If not success, we do not publish anything in the result
     if success:
-      self._result = Empty()
+      self._result = EXAMActionMsgResult
       self._as.set_succeeded(self._result)
       
       
