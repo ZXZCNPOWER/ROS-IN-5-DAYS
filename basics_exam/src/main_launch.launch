@@ -1,0 +1,22 @@
+<launch>
+
+  <node pkg ="basics_exam"
+        type="main_program.py"
+        name="main_client_node"
+        output="screen">
+  </node>
+  
+  <node pkg ="basics_exam"
+        type="exam_service_server.py"
+        name="service_server_node"
+        output="screen">
+  </node>
+
+  <node pkg ="basics_exam"
+        type="exam_action_server.py"
+        name="action_server_node"
+        output="screen">
+  </node>
+
+
+</launch>
